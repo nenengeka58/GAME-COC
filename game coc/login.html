@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Pengguna - GameBuddy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 400px;
+      margin: 40px auto;
+      background: #232323;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #2a2a2a;
+      color: #fff;
+    }
+    .minat-section {
+      margin-bottom: 16px;
+    }
+    .minat-section label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #ff9800;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ffa733;
+    }
+    .kembali {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #ff9800;
+      text-decoration: none;
+    }
+    .kembali:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Login Pengguna</h1>
+  </header>
+  <main>
+    <form>
+      <label for="username">Nama Pengguna</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Kata Sandi</label>
+      <input type="password" id="password" name="password" required />
+
+      <div class="minat-section">
+        <label>Pilih minat game kamu:</label><br>
+        <label><input type="checkbox" name="minat" value="Mobile Legends" /> Mobile Legends</label>
+        <label><input type="checkbox" name="minat" value="Clash of Clans" /> Clash of Clans</label>
+        <label><input type="checkbox" name="minat" value="GTA" /> GTA</label>
+        <label><input type="checkbox" name="minat" value="God of War" /> God of War</label>
+        <label><input type="checkbox" name="minat" value="Delta Force" /> Delta Force</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+    <a class="kembali" href="index.html">← Kembali ke Beranda</a>
+  </main>
+</body>
+</html>
